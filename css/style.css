@@ -686,9 +686,8 @@ border-left: 1px solid #EEEEEE;
 .form-email-footer-field {
   display: flex;
   flex-direction: column;
-  
-    
 }
+
 .form-emeil-label {
   font-weight: 700;
   font-size: 14px;
@@ -721,7 +720,7 @@ border-left: 1px solid #EEEEEE;
   display: flex;
   
 }
-.form-submit-btn {
+.form-submit-btn { 
   margin-top: 48px;
   margin-left: 12px;
   width: 200px;
@@ -736,6 +735,7 @@ border-left: 1px solid #EEEEEE;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  outline: transparent;
 }
 .form-submit-footer-icon {
   position: absolute;
@@ -762,7 +762,9 @@ border-left: 1px solid #EEEEEE;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--tertiary-text-color);
 }
-
+.modal-close:hover + .close-icon {
+  fill: var(--accent-color);
+}
 .modal-bcg {
   position: fixed;
   top: 0;
@@ -787,6 +789,118 @@ border-left: 1px solid #EEEEEE;
   border-radius: 4px;
   transition: transform 250ms;
 }
+.modal-title {
+  margin: 40px 40px 12px 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  color: #212121;
+}
+textarea {
+  resize: none;
+}
+.modal-form-inputs {  
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  height: 342px;  
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+.input-wrap {  
+  position: relative;
+  
+}
+.modal-form-label {
+  display: block;  
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.modal-form-input {   
+  padding-left: 42px;  
+  width: 100%;
+  height: 40px;  
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: transparent;
+  border-radius: 4px;
+  outline: none;
+    
+}
+.modal-form-input:focus {
+  border-color: var(--accent-color);
+}
+.modal-form-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-coment {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+ }
+.modal-form-inputs .modal-form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-text-area {  
+  width: 100%;
+  height: 120px;  
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.modal-text-area:focus {
+  border-color: var(--accent-color);
+}
+.modal-text-area::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em; 
+  padding: 12px 16px;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-icon {
+  position: absolute;
+  left: 12px;  
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal-form-check {
+  display: flex;
+  flex-direction: row;
+  width: 425px;
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+.modal-form-agree {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.treaty-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+.modal-form-submit-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
 
 .is-hidden {
   opacity: 0;
