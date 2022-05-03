@@ -831,8 +831,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   background-color: transparent;
   border-radius: 4px;
-  outline: none;
-    
+  outline: none;    
 }
 .modal-form-input:focus {
   border-color: var(--accent-color);
@@ -906,14 +905,18 @@ textarea {
   border: 2px solid;
   border-color: #212121;
   border-radius: 3px;
+  margin-right: 7px;
   
 } 
 .modal-form-check-input:checked + .modal-form-agree::before {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url('../images/icons/Vector.svg');
+  background-image: url('../images/icons/check.svg');
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+
 
 }
 
@@ -925,10 +928,10 @@ textarea {
 .button-submit {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  
+  margin-right: auto;  
   
 }
+
 .modal-form-submit-btn {
   transition-property: background-color;
   transition-duration: 250ms;
@@ -945,8 +948,7 @@ textarea {
   cursor: pointer;
   border: 1px solid transparent;
   text-align: center;
-  letter-spacing: 0.06em;
-  
+  letter-spacing: 0.06em;  
   border-radius: 4px;
   }
   
